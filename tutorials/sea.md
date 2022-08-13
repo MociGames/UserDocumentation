@@ -319,7 +319,7 @@ public double getDistanceBonus() {
 
 当您达到**船长**后，手持物品输入`/showoff  `即可向全服玩家展示手中物品。
 
-输入` /view <物品ID>` 即可查看被展示的物品。若是私人展示，则需要在物品ID前加上“**#**”，如`/view #1`。
+输入` /view <物品ID>` 即可查看被展示的物品。若是私人展示，则需要在物品ID前加上“**# **”，如`/view # 1`。
 
 ## 其他
 
@@ -327,12 +327,12 @@ public double getDistanceBonus() {
 
 |    职务    | 用户名              |
 | :--------: | :------------------ |
-|    服主    | (#?) -----          |
-| 管理、建筑 | (#302) 1Moo         |
-|    管理    | (#357) flowerinsnow |
-|    技术    | (#1) CUMR 卡姆      |
-|    技术    | (#2)LSeng 雷神      |
-|    建筑    | (#4341) Undoya      |
+|    服主    | (# ?) -----          |
+| 管理、建筑 | (# 302) 1Moo         |
+|    管理    | (# 357) flowerinsnow |
+|    技术    | (# 1) CUMR 卡姆      |
+|    技术    | (# 2)LSeng 雷神      |
+|    建筑    | (# 4341) Undoya      |
 
 ### 宣传文案
 
@@ -351,7 +351,7 @@ public double getDistanceBonus() {
 >玩法无穷，等待发觉。*服务器还在开荒中！*
 >
 >更多介绍详见：
->https://wiki.mocimc.cn/#!tutorials/sea.md
+>https://wiki.mocimc.cn/# !tutorials/sea.md
 
 ### 部分内容出处
 
@@ -396,7 +396,7 @@ public double getDistanceBonus() {
 
 ## 游戏内消费
 
-条款请见 [墨瓷游戏 服务条款 # 交易](https://wiki.mocimc.cn/#!terms.md#交易)
+条款请见 [墨瓷游戏 服务条款 # 交易](https://wiki.mocimc.cn/# !terms.md# 交易)
 
 
 

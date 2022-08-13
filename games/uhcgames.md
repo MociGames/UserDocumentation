@@ -13,7 +13,7 @@ UHCGAME是由KarStudio 独立自行开发的一款游戏，其游戏内容简单
 
 ## 规则
 
-###禁止cross team CT (跨队联合)
+### 禁止cross team CT (跨队联合)
 ### **活到最后算为胜利**
 
 ## uhc商城

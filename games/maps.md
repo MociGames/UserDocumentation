@@ -1,6 +1,6 @@
 # 墨瓷地图介绍
 
-##主大厅
+## 主大厅
 
 
 
@@ -15,7 +15,7 @@
 ![lobby_3][12]
 
 
-##FFa等待大厅
+## FFa等待大厅
 
 ![FFa_waiting][1]
 
@@ -27,7 +27,7 @@
 
 
 
-##FFa Gapple
+## FFa Gapple
 
 ![FFa_gapple_1][4]
 

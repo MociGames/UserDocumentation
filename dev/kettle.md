@@ -4,7 +4,7 @@
 **注意： 此文档并非最终开发文档！**
 
 ---
-##简介
+## 简介
   InkKettle，是我们的第一个服务端。基于git-Paper，并在此基础上而外增加和删减内容，来陪合我们的实际要求。预计开发周期为两个月。
   InkKettle的中文译名墨桶，将作为**墨瓷平台**的主力军。它将内置~KarCore~基础内容，并加以完善。于是，所有的开发者将拥有更高权限和更多的自定义化内容，便于给玩家提供更好的体验。
        
@@ -68,7 +68,7 @@
 
 ## 详解
 注意，详解中的内容**会根据日后实际需要增减和删减**。尽量在第一次开发时考虑到更多情况。
-###Data Manager 【！】
+### Data Manager 【！】
 DataManager是几乎所有功能的基础。它负责与MySQL、BC的数据交换和更新。
 主要的方法有
 ```java
@@ -131,10 +131,10 @@ UserType:
 ProfileManager是新玩家注册、登录的门。
 Settings部分可放一放，但UserInformation部分务必迅速。
 
-###Permission Manager
+### Permission Manager
 权限管理器，拥有PermissionEx的阉割内容。
 增加事件`UserPermissionUpdateEvent`
-###Karma、Vault Managers
+### Karma、Vault Managers
 同KarCore中的方法，增加两个事件。
 ```Java
   UserVaultUpdateEvent
