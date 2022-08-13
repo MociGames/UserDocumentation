@@ -2,8 +2,6 @@
 
 ===========
 
-<iframe style="width:100%;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://namemc.com/server/mocimc.cn/embed" height="90"></iframe>
-
 ### IP地址
 通常情况下，如果您可以使用 `kar.red` 链接到我们的服务器。
 您也可以根据自己的网络状况选用下列方案。
