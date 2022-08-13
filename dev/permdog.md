@@ -1,6 +1,6 @@
 ﻿# 权限狗开发文档
 
-##简介
+## 简介
 鉴于墨瓷玩家数据的特殊性，也为了日后更方便的管理，我们需要一个简单的、支持InkID(墨码)的权限组插件。
 
 我们不需要多余的功能。仅用其设置默认组和给特别玩家特别的权限。
@@ -12,9 +12,9 @@
 
 **注意： 此文档并非最终开发文档！**
 
-##功能
+## 功能
 
-###对插件的管理
+### 对插件的管理
 
 ```
 /perm extands add <库名>
@@ -25,7 +25,7 @@
 /perm updata
 ```
 
-###对组的管理
+### 对组的管理
 
 ```
 //通用指令 
@@ -40,7 +40,7 @@
 /perm group <组名> user(s) remove [用户名] //移除一个用户
 ```
 
-###对用户的管理
+### 对用户的管理
 
 ```
 //通用指令 
@@ -53,7 +53,7 @@
 /perm user <用户名> group(s) remove [组名] //从一个组中移除
 ```
 
-##方法
+## 方法
 ```
 PermManager pm = Kettle.getPermDog(); 
 
@@ -98,22 +98,22 @@ pu.addPerms(List<String> 权限);//增加一堆权限
 pu.removePerms(List<String> 权限);//移除一堆权限
 ```
 
-##数据库格式
-###Users表
+## 数据库格式
+### Users表
 | id |  inkid | type |value | base | 
 | --- |  --- | --- | --- | --- |
 | 1 | 3 |  group | owner| @ |
 | 2 | 3 |  perm | moci.owner | @ |
 | 3 | 3 |  perm | moci.dnf | @ |
 
-###Group表
+### Group表
 | id | groupname | type |value | base | 
 | --- | --- | --- | --- | --- |
 | 1 | admin | extands | owner | @ |
 | 2 | owner | perm | moci.owner | @ |
 | 3 | owner | perm | moci.shutdown | @ |
 
-##结语
+## 结语
 
 对外公开，作者@cam。
 希望能给那些做权限组插件的中国开发者一点思路。

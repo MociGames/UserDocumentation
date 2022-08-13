@@ -10,8 +10,8 @@
        
 ---
 
-##内容
-###代码规范
+## 内容
+### 代码规范
 * 包、类名规范
  -  包名统一采用cn.moci.*，便于构建器收取。导用的APIs独立内置。
  -  类名开头大写，字母开头大写。所有的事件、管理器、核心独立一个包。
@@ -26,8 +26,8 @@
  - 修改一个Object统一使用 modify开头，如
  `u.getDataManager().modifyData(“Point”, “66”);`
 
-##系统
-###User (用户) 系统列表
+## 系统
+### User (用户) 系统列表
 * Managers 管理器
   - [ ] 【！】Data Manager (Handlers,特殊币种,特殊数据)
   - [ ] 【！】Version Manager(Online Mode, GameVersion,Forge Mods,etc)
@@ -54,7 +54,7 @@
   - [ ] UserKarmaUpdataEvent
   - [ ] UserPermissionUpdataEvent
 
-###服务器系统列表
+### 服务器系统列表
   - [ ] 修改Plugins指令，实现公开插件。
   - [ ] 修改Stop指令为shutdown，防止误操作。
   - [ ] 修改击退，并读取User被设定的击退数据。该数据需要在每次玩家进入时设置初始值，并可以更改。
@@ -66,7 +66,7 @@
   - [ ] 黑客专服
   - [ ] ELO匹配系统。
 
-##详解
+## 详解
 注意，详解中的内容**会根据日后实际需要增减和删减**。尽量在第一次开发时考虑到更多情况。
 ###Data Manager 【！】
 DataManager是几乎所有功能的基础。它负责与MySQL、BC的数据交换和更新。
@@ -88,7 +88,7 @@ public void clearUserData(); //清除一个User在所有数据库的数据，并
 ```
 通过以上方法，可为所有的数据操作搭桥，实现简单操作，便于开发。
 
-###Version Manager 【！】
+### Version Manager 【！】
 VersionManager负责着玩家关于客户端、版本、正盗版等个人因素的数据。
 主要的方法有
 ```java
@@ -100,7 +100,7 @@ public boolean isUsingForge(); //清除一个User在所有数据库的数据，�
 ```
 VersionManager是墨瓷**最基础的功能之一**。它的稳定性保持这墨瓷玩家的正常加入和数据的保存。
 
-###Profile Manager 【！】
+### Profile Manager 【！】
 ProfileManager负责这玩家个人信息(包含私人信息)及设定的更改与储存。
 其中，关于密码的部分需加密。
 主要的方法如下
@@ -141,18 +141,18 @@ Settings部分可放一放，但UserInformation部分务必迅速。
   UserKarmaUpdataEvent
 ```
 
-###GUI Manager
+### GUI Manager
 不同类型GUI，同KarCore，增加铁砧、发射器、投射器、漏斗、炼药台、附魔台的UI。
 
-###Knockback Manager
+### Knockback Manager
 KnockbackManager负责Knockback的修改。每个用户在进入服务器时会被定义击退，若不定义则为普通击退。
 Knockback是可以修改的。在每一次修改数值时，KocbackManager会读取当前用户的击退数值，并反馈到attack()方法内。
 
-###Message Manager
+### Message Manager
 发送消息。
 同KarCore一样。不过，这次的MessageManager需要区别各消息类型发送,并又更方便的方法。
 
-###Package Manager
+### Package Manager
 发包的API归类到这里即可。
 
 ---
